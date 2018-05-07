@@ -6,21 +6,14 @@
 
 <script>
 
-	function factorial (s) {
-		console.log(s * prod);
+	function tree (s) {
+		for (i=0; i<s; i++){
+			console.log("   /\\ \n  /  \\ \n  /  \\ \n /    \\ \n/      \\ \n   || \n   || \n \n");
+		}
 	}
 	
-	var x = parseInt(prompt("Enter a number:"));
-	var prod = 1;
-	
-		for (var count=1; count<x; count++){
-			var b = count-1;
-			
-			//console.log(count+ "," + prod);
-			prod = prod*count
-		}
-	
-	factorial(x);
+	var x = parseInt(prompt("How many trees would you like?"),10);
+	tree(x);
 	
 </script>
 </body>
